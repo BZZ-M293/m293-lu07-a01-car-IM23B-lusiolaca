@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Fahrzeug-Konfigurator</title>
+    <meta charset="UTF-8">
+    <title>
+    </title>
 
 </head>
 <body>
+<form action="#">
+    <label>Fahrzeug:
+        <select name="Fahrzeugmodell" size="5">
+            <option>Modell Chiron</option>
+            <option>Modell 112</option>
+            <option>Modell 918</option>
+            <option>Modell 778</option>
+            <option>Modell 737</option>
+            <option>Modell Max</option>
+            <option>Modell 232</option>
+            <option>Modell 110</option>
+            <option>Modell Air Max 95</option>
+            <option>Modell 876</option>
+            <option>Modell 656</option>
+            <option>Modell N95</option>
+            <option>Modell 616</option>
+            <option>Modell 999</option>
+            <option>Modell 420</option>
+        </select>
+    </label>
 
+    <form>
+        <input type="radio" id="ro" name="Lackfarbe" value="Rot">
+        <label for="ro"> Rot</label>
+        <input type="radio" id="bl" name="Lackfarbe" value="Blau">
+        <label for="bl"> Blau</label>
+        <input type="radio" id="gr" name="Lackfarbe" value="Grün">
+        <label for="gr"> Grün</label>
+        <input type="radio" id="sc" name="Lackfarbe" value="Schwarz">
+        <label for="sc"> Schwarz</label>
+        <input type="radio" id="or" name="Lackfarbe" value="Orange">
+        <label for="or"> Orange</label>
+    </form>
+    <form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+        <label for='adresse'>Adresse</label>
+        <input id='adresse' name='adresse' type='text'/>
+        <button type='submit'>Absenden</button>
+    </form>
+</form>
 <h1>Fahrzeug-Konfigurator</h1>
 
 
