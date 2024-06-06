@@ -2,51 +2,61 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>
-    </title>
+    <title>Fahrzeug-Konfigurator</title>
 
 </head>
 <body>
-<form action="#">
-    <label>Fahrzeug:
-        <select name="Fahrzeugmodell" size="5">
-            <option>Modell Chiron</option>
-            <option>Modell 112</option>
-            <option>Modell 918</option>
-            <option>Modell 778</option>
-            <option>Modell 737</option>
-            <option>Modell Max</option>
-            <option>Modell 232</option>
-            <option>Modell 110</option>
-            <option>Modell Air Max 95</option>
-            <option>Modell 876</option>
-            <option>Modell 656</option>
-            <option>Modell N95</option>
-            <option>Modell 616</option>
-            <option>Modell 999</option>
-            <option>Modell 420</option>
-        </select>
-    </label>
 
-    <form>
-        <input type="radio" id="ro" name="Lackfarbe" value="Rot">
-        <label for="ro"> Rot</label>
-        <input type="radio" id="bl" name="Lackfarbe" value="Blau">
-        <label for="bl"> Blau</label>
-        <input type="radio" id="gr" name="Lackfarbe" value="Grün">
-        <label for="gr"> Grün</label>
-        <input type="radio" id="sc" name="Lackfarbe" value="Schwarz">
-        <label for="sc"> Schwarz</label>
-        <input type="radio" id="or" name="Lackfarbe" value="Orange">
-        <label for="or"> Orange</label>
-    </form>
-    <form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
-        <label for='adresse'>Adresse</label>
-        <input id='adresse' name='adresse' type='text'/>
-        <button type='submit'>Absenden</button>
-    </form>
-</form>
 <h1>Fahrzeug-Konfigurator</h1>
+
+<form action="https://it.bzz.ch/demo/formdata/index.php" method='post'>
+
+    <fieldset>
+        <legend>Fahrzeugmodell</legend>
+        <select id="Fahrzeugmodell" name="Fahrzeugmodell" required>
+            <optgroup label="Kompaktwagen">
+                <option value="Beamer">Beamer</option>
+                <option value="B-Klasse">B-Klasse</option>
+                <option value="M4">M4</option>
+                <option value="918">918</option>
+            </optgroup>
+            <optgroup label="Limousinen ">
+                <option value="Hellcat">Hellcat</option>
+                <option value="Trackhawk">Trackhawk</option>
+                <option value="S-Klasse">S-Klasse</option>
+                <option value="CLS">CLS</option>
+            </optgroup>
+            <optgroup label="SUVs und Offroader">
+                <option value="G-Wagon">G-Wagon</option>
+                <option value="Range Rover">Range Rover</option>
+                <option value="GLC">GLC</option>
+                <option value="GLE">GLE</option>
+                <option value="GLS">GLS</option>
+            </optgroup>
+            <optgroup label="Sportwagen">
+                <option value="AMG GT">AMG GT</option>
+            </optgroup>
+            <optgroup label="Elektroautos">
+                <option value="Tesla">Tesla</option>
+                <option value="BMW">BMW</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Lackfarbe</legend>
+        <input id="Rot" name="Lackfarbe" type="radio" value="Rot">
+        <label for="Rot">Rot</label><br>
+        <input id="Blau" name="Lackfarbe" type="radio" value="Blau">
+        <label for="Blau">Blau</label><br>
+        <input id="Grün" name="Lackfarbe" type="radio" value="Grün">
+        <label for="Grün">Grün</label><br>
+        <input id="Schwarz" name="Lackfarbe" type="radio" value="Schwarz">
+        <label for="Schwarz">Schwarz</label>
+    </fieldset>
+
+
+    <input type="submit" value="Konfiguration absenden">
+</form>
 
 
 </body>
