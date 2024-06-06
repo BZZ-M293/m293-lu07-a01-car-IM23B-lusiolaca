@@ -9,53 +9,36 @@
 
 <h1>Fahrzeug-Konfigurator</h1>
 
-<form action="https://it.bzz.ch/demo/formdata/index.php" method='post'>
-
-    <fieldset>
-        <legend>Fahrzeugmodell</legend>
-        <select id="Fahrzeugmodell" name="Fahrzeugmodell" required>
-            <optgroup label="Kompaktwagen">
-                <option value="Beamer">Beamer</option>
-                <option value="B-Klasse">B-Klasse</option>
-                <option value="M4">M4</option>
-                <option value="918">918</option>
-            </optgroup>
-            <optgroup label="Limousinen ">
-                <option value="Hellcat">Hellcat</option>
-                <option value="Trackhawk">Trackhawk</option>
-                <option value="S-Klasse">S-Klasse</option>
-                <option value="CLS">CLS</option>
-            </optgroup>
-            <optgroup label="SUVs und Offroader">
-                <option value="G-Wagon">G-Wagon</option>
-                <option value="Range Rover">Range Rover</option>
-                <option value="GLC">GLC</option>
-                <option value="GLE">GLE</option>
-                <option value="GLS">GLS</option>
-            </optgroup>
-            <optgroup label="Sportwagen">
-                <option value="AMG GT">AMG GT</option>
-            </optgroup>
-            <optgroup label="Elektroautos">
-                <option value="Tesla">Tesla</option>
-                <option value="BMW">BMW</option>
-            </optgroup>
+<form action>
+    <label>Fahrzeugmodell:
+        <select name="Fahrzeugmodell" size="5">
+            <option>Modell 1</option>
+            <option>Modell 2</option>
+            <option>Modell 3</option>
+            <option>Modell 4</option>
+            <option>Modell 5</option>
+            <option>Modell 6</option>
+            <option>Modell 7</option>
+            <option>Modell 8</option>
+            <option>Modell 9</option>
+            <option>Modell 10</option>
+            <option>Modell 11</option>
+            <option>Modell 12</option>
+            <option>Modell 13</option>
+            <option>Modell 14</option>
+            <option>Modell 15</option>
         </select>
-    </fieldset>
-    <fieldset>
-        <legend>Lackfarbe</legend>
-        <input id="Rot" name="Lackfarbe" type="radio" value="Rot">
-        <label for="Rot">Rot</label><br>
-        <input id="Blau" name="Lackfarbe" type="radio" value="Blau">
-        <label for="Blau">Blau</label><br>
-        <input id="Grün" name="Lackfarbe" type="radio" value="Grün">
-        <label for="Grün">Grün</label><br>
-        <input id="Schwarz" name="Lackfarbe" type="radio" value="Schwarz">
-        <label for="Schwarz">Schwarz</label>
-    </fieldset>
-
-
-    <input type="submit" value="Konfiguration absenden">
+    </label>
+    <input type="radio" id="rot" name="Lackfarbe" value="Rot">
+    <label for="rot">Rot</label>
+    <input type="radio" id="blau" name="Lackfarbe" value="Blau">
+    <label for="blau">Blau</label>
+    <input type="radio" id="gruen" name="Lackfarbe" value="Grün">
+    <label for="gruen">Grün</label>
+    <input type="radio" id="schwarz" name="Lackfarbe" value="Schwarz">
+    <label for="schwarz">Rot</label>
+    <input type="radio" id="weiss" name="Lackfarbe" value="Weiss">
+    <label for="weiss">Weiss</label>
 </form>
 
 
